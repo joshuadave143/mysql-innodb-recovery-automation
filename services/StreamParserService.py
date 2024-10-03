@@ -18,3 +18,11 @@ class StreamParserService:
                 print(f"Pages from the {table_name} table have been successfully extracted.")
 
         print("Page extraction completed.")
+
+    def recover_data(self):
+        print("Recovering data from the extracted pages...")
+
+        for file in os.listdir(settings.PAGES_OUTPUT_PATH):
+            sortedData = sorted(os.listdir(settings.PAGES_OUTPUT_PATH+f"/{file}/FIL_PAGE_INDEX"), key=lambda x: int(x.split('.')[0]))
+            print(sortedData)
+            # print(os.listdir(settings.PAGES_OUTPUT_PATH+f"/{file}/FIL_PAGE_INDEX"))
