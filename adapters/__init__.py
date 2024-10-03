@@ -1,1 +1,2 @@
 from .DBSakeAdapter import DBSakeAdapter
+from .StreamParserAdapter import StreamParserAdapter

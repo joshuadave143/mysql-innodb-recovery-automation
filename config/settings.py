@@ -26,6 +26,12 @@ DATA_DIRECTORY_PATH             = PROJECT_ROOT+'/dataDirectory'
 ############ location of Output file ##################
 OUTPUT_PATH                     = PROJECT_ROOT+'/output'
 
+SCHEMA_OUTPUT_PATH              = OUTPUT_PATH+'/schemas'
+
+DATA_OUTPUT_PATH                = OUTPUT_PATH+'/data'
+
+PAGES_OUTPUT_PATH               = OUTPUT_PATH+'/pages'
+
 ############ FILE NAME OF THE MERGE SQL SCHEMA ################## CHECK THE GRAMMAR LETTER
 
-FULL_SCHEMA                     = OUTPUT_PATH+'/FULL_SCHEMA.sql'
+FULL_SCHEMA                     = SCHEMA_OUTPUT_PATH+'/FULL_SCHEMA.sql'
